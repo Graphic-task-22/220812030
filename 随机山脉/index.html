@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>雪山渲染</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "three": "https://esm.sh/three@0.174.0/build/three.module.js",
+    "three/addons/": "https://esm.sh/three@0.174.0/examples/jsm/",
+    "simplex-noise": "https://esm.sh/simplex-noise@4.0.3/dist/esm/simplex-noise.js",
+    "dat.gui": "https://esm.sh/dat.gui@0.7.9"
+  }
+}
+</script>
+
+</head>
+
+<body>
+  <script type="module" src="./src/index.js"></script>
+</body>
+
+</html>
