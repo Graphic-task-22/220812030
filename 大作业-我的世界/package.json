@@ -1,0 +1,18 @@
+{
+  "name": "minecraft-threejs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Yulei Zhu",
+  "description": "Minecraft clone made with Three.js and JavaScript",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 8080"
+  },
+  "devDependencies": {
+    "vite": "^2.8.0"
+  },
+  "dependencies": {
+    "three": "^0.137.0"
+  }
+}

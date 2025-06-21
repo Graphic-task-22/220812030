@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/src/static/mc.ico" />
+  <link rel="stylesheet" href="./src/style.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <title>我的世界</title>
+  <script type="module" src="./src/main.js"></script>
+</head>
+
+<body>
+  <script type="module" src="./src/main.js"></script>
+
+  <div class="menu start">
+    <button id="play" class="button">开始游戏</button>
+    <button id="save" class="button">加载存档</button>
+    <button id="setting" class="button">设置</button>
+    <button id="feature" class="button">操作指南</button>
+    <button id="exit" class="button">退出</button>
+  </div>
+
+  <div class="features hidden">
+    <p>
+      <b> 鼠标左键:</b> 破坏方块 <br />
+      <b> 鼠标右键:</b> 放置方块 <br />
+      <b> 滚轮 / 数字键:</b> 切换方块类型 <br />
+      <b> WASD:</b> 移动 <br />
+      <b> 空格键:</b> 跳跃 / 飞行上升 <br />
+      <b> Q:</b> 切换 普通 / 开发 模式 <br />
+      <b> Shift:</b> 潜行 / 飞行下降 <br />
+      <b> F:</b> 全屏模式 <br />
+      <b> E:</b> 菜单界面 <br />
+    </p>
+    <button id="back" class="button">返回</button>
+  </div>
+
+  <div class="settings hidden">
+    <p id="distance">渲染距离:3</p>
+    <input type="range" id="distance-input" min="1" max="8" value="3" step="1" />
+
+    <p id="fov">视野范围:70</p>
+    <input type="range" id="fov-input" min="40" max="100" value="70" step="1" />
+
+    <p id="music">音乐:开启</p>
+    <input type="range" id="music-input" min="0" max="1" value="1" step="1" />
+
+    <br /><br />
+    <button id="setting-back" class="button">应用</button>
+  </div>
+
+  <div class="save-modal hidden">游戏已保存！</div>
+  <div class="load-modal hidden">存档已加载！</div>
+</body>
+</html>
